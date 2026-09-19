@@ -2,7 +2,18 @@
 
 A lightweight, full-featured API client built into your editor. Test REST and GraphQL APIs, organize requests into collections, manage environments, and generate code snippets — without switching to Postman or another external tool.
 
-Available on [OpenVSX](https://open-vsx.org/extension/gudlab/gud-api) and the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=gudlab.gud-api). Learn more at [gudlab.org/gudapi](https://gudlab.org/gudapi.html).
+[![Open VSX](https://img.shields.io/open-vsx/dt/gudlab/gud-api?label=Open%20VSX)](https://open-vsx.org/extension/gudlab/gud-api)
+[![VS Marketplace](https://img.shields.io/visual-studio-marketplace/i/gudlab.gud-api?label=VS%20Marketplace)](https://marketplace.visualstudio.com/items?itemName=gudlab.gud-api)
+
+Install from [Open VSX](https://open-vsx.org/extension/gudlab/gud-api) or the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=gudlab.gud-api). Site: [gudapi.gudlab.org](https://gudapi.gudlab.org).
+
+## Source
+
+The **editor extension is proprietary**. This repository is the public home for product docs and [issues](https://github.com/gudlab/gud-api/issues). It does **not** contain the VS Code / Open VSX extension source.
+
+If you followed the GitHub link from the Marketplace or Open VSX, you are in the right place for bugs and feature requests. There is nothing here to clone for the UI.
+
+The companion MCP server **is public**: [`@gudlab/gud-api-mcp`](https://www.npmjs.com/package/@gudlab/gud-api-mcp), source in [gudlab/gud-api-mcp](https://github.com/gudlab/gud-api-mcp). Docs: [gudapi.gudlab.org/guide/ai-agents](https://gudapi.gudlab.org/guide/ai-agents).
 
 ## Features
 
@@ -70,16 +81,33 @@ Available on [OpenVSX](https://open-vsx.org/extension/gudlab/gud-api) and the [V
 
 ## Getting Started
 
-1. Install the extension from OpenVSX or the VS Code Marketplace
+1. Install the extension from Open VSX or the VS Code Marketplace
 2. Click the **Gud API** icon in the activity bar
 3. Enter a URL and press **Send**
 4. Click **Save** to add the request to a collection
 
 To import an existing collection, click **Import** in the sidebar and select a Postman, Thunder Client, or OpenAPI JSON file.
 
+## MCP for AI agents
+
+Agents can create, run, and save requests as real Gud API collections via `@gudlab/gud-api-mcp`:
+
+```json
+{
+  "mcpServers": {
+    "gud-api": {
+      "command": "npx",
+      "args": ["-y", "@gudlab/gud-api-mcp", "--project", "."]
+    }
+  }
+}
+```
+
+Source and tools: [gudlab/gud-api-mcp](https://github.com/gudlab/gud-api-mcp). Guide: [gudapi.gudlab.org/guide/ai-agents](https://gudapi.gudlab.org/guide/ai-agents).
+
 ## Free vs Pro
 
-Gud API is free to use with no limits on requests, collections, or folders.
+Gud API is free to use with no limits on requests, collections, or folders. Team / cloud sync is the Pro upsell.
 
 | Feature | Free | Pro |
 |---------|------|-----|
@@ -113,4 +141,4 @@ Report bugs or request features at [github.com/gudlab/gud-api/issues](https://gi
 
 ## License
 
-Proprietary. See the LICENSE file included with this extension for details.
+Proprietary. See [LICENSE](./LICENSE). The editor UI is not open source. The MCP server has its own license in [gudlab/gud-api-mcp](https://github.com/gudlab/gud-api-mcp).
