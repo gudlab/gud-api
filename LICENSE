@@ -1,0 +1,31 @@
+Gud API - Proprietary License
+
+Copyright (c) 2024 GudLab. All rights reserved.
+
+This software and associated documentation files (the "Software") are the
+proprietary property of GudLab. The Software is licensed, not sold.
+
+PERMITTED USE:
+You may install and use the Software as a VS Code / OpenVSX extension for
+personal or commercial development purposes, subject to the terms of the
+applicable free or paid plan.
+
+RESTRICTIONS:
+You may not, without prior written consent from GudLab:
+- Copy, modify, merge, or create derivative works of the Software
+- Distribute, sublicense, sell, or otherwise transfer the Software
+- Reverse engineer, decompile, or disassemble the Software
+- Remove or alter any proprietary notices or labels
+
+PAID FEATURES:
+Certain features require a valid license key. Use of paid features without
+a valid license is prohibited.
+
+DISCLAIMER:
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+GUDLAB BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY ARISING FROM
+THE USE OF THE SOFTWARE.
+
+For licensing inquiries: hello@gudlab.org
